@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.anwensoft.cardvr"
+        minSdkVersion 24
+        targetSdkVersion 31
+        versionCode 1
+        versionName "0.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets{
+        main{
+            res.srcDirs += [
+                    'src/main/res_car_home',
+                    'src/main/res_led_control',
+                    'src/main/res_tv_control',
+                    'src/main/res_window_control',
+                    'src/main/res_high_pitch',
+                    'src/main/res_car_home_en',
+                    'src/main/res_led_control_en',
+                    'src/main/res_tv_control_en',
+                    'src/main/res_window_control_en',
+                    'src/main/res_high_pitch_en'
+            ]
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+}

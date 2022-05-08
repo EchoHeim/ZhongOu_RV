@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">电器控制</string>
+
+    <string name="current_version_format">Ver 0.1</string>
+    <string name="share_friend">分享给好友</string>
+    <string name="update_version">版本更新</string>
+    <string name="activity_about_text">欢迎使用USB调试助手，有问题请联系！\nE-mail:shilong.native@foxmail.com</string>
+
+    <string name="activity_home_scan">搜索USB设备</string>
+    <string name="activity_home_receive">基本收发测试</string>
+    <string name="activity_home_home_car">车机主菜单</string>
+
+    <string name="activity_about">软件信息</string>
+
+    <string name="activity_receive">调试窗口</string>
+    <string name="activity_receive_state">连接状态</string>
+    <string name="activity_receive_tx">TX 0</string>
+    <string name="activity_receive_rx">RX 0</string>
+
+
+</resources>

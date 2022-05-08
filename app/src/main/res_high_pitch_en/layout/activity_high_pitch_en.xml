@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_led_enverment_en"
+    tools:context=".activity.Activity_High_pitch">
+
+    <ImageView
+        android:id="@+id/imageView_light"
+
+        android:layout_width="322dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="36dp"
+
+        android:background="@drawable/color_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.anwensoft.cardvr.activity.VerticalSeekBar
+        android:id="@+id/Seek_Bar_Display"
+
+        android:layout_width="66dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="115dp"
+        android:layout_marginLeft="39dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageView_light"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.anwensoft.cardvr.activity.VerticalSeekBar
+        android:id="@+id/Seek_Bar_Front"
+
+        android:layout_width="66dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="115dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+
+        app:layout_constraintStart_toEndOf="@id/Seek_Bar_Display"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.anwensoft.cardvr.activity.VerticalSeekBar
+        android:id="@+id/Seek_Bar_Behind"
+
+        android:layout_width="66dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="115dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+
+        app:layout_constraintStart_toEndOf="@id/Seek_Bar_Front"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.anwensoft.cardvr.activity.VerticalSeekBar
+        android:id="@+id/Seek_Bar_ChangeColor"
+
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="123dp"
+        android:layout_marginLeft="140dp"
+
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/icon_button"
+
+        android:max="64"
+        app:layout_constraintStart_toEndOf="@id/Seek_Bar_Behind"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/TextView_Color"
+        android:background="@drawable/view_1"
+
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="555dp"
+
+        android:gravity="center"
+        android:textSize="30sp"
+
+        app:layout_constraintStart_toEndOf="@id/Seek_Bar_Behind"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView_Display"
+        android:background="@drawable/icon_lable_little"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginBottom="112dp"
+
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:text="00"
+
+        app:layout_constraintStart_toEndOf="@id/imageView_light"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView_Front"
+
+        android:background="@drawable/icon_lable_little"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="112dp"
+
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:text="00"
+
+        app:layout_constraintStart_toEndOf="@id/TextView_Display"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView_Behind"
+
+        android:background="@drawable/icon_lable_little"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="112dp"
+
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:text="00"
+
+        app:layout_constraintStart_toEndOf="@id/TextView_Front"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <CheckBox
+        android:id="@+id/light_checkbox"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="208dp"
+
+        android:padding="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_car_main_en"
+    tools:context=".activity.Activity_Car_home">
+
+    <ImageButton
+        android:id="@+id/imageButton_led"
+        android:layout_width="@dimen/pad_width"
+        android:layout_height="@dimen/pad_height"
+        android:layout_marginTop="@dimen/pad_margin_top"
+        android:layout_marginBottom="@dimen/pad_margin_bottom"
+        android:background="@drawable/activity_led_en"
+
+        android:onClick="ledMessage"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_high_pitch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--
+    <ImageButton
+        android:id="@+id/imageButton_high_pitch"
+        android:layout_width="@dimen/pad_width"
+        android:layout_height="@dimen/pad_height"
+        android:layout_marginTop="@dimen/pad_margin_top"
+        android:layout_marginBottom="@dimen/pad_margin_bottom"
+        android:background="@drawable/acitvity_high_pitch_en"
+
+        android:onClick="high_pitchMessage"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_tv"
+        app:layout_constraintStart_toEndOf="@id/imageButton_led"
+        app:layout_constraintTop_toTopOf="parent" />
+-->
+
+    <ImageButton
+        android:id="@+id/imageButton_high_pitch"
+        android:layout_width="@dimen/pad_width"
+        android:layout_height="@dimen/pad_height"
+        android:layout_marginTop="@dimen/pad_margin_top"
+        android:layout_marginBottom="@dimen/pad_margin_bottom"
+        android:background="@drawable/icon_reserve_en"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_tv"
+        app:layout_constraintStart_toEndOf="@id/imageButton_led"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton_tv"
+        android:layout_width="@dimen/pad_width"
+        android:layout_height="@dimen/pad_height"
+        android:layout_marginTop="@dimen/pad_margin_top"
+        android:layout_marginBottom="@dimen/pad_margin_bottom"
+        android:background="@drawable/activity_tv_en"
+
+        android:onClick="tvMessage"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton_window"
+        android:layout_width="@dimen/pad_width"
+        android:layout_height="@dimen/pad_height"
+        android:layout_marginTop="@dimen/pad_margin_top"
+        android:layout_marginBottom="@dimen/pad_margin_bottom"
+        android:background="@drawable/activity_window_en"
+
+        android:onClick="windowMessage"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_inverter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_tv"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--
+
+        <ImageButton
+            android:id="@+id/imageButton_window"
+            android:layout_width="@dimen/pad_width"
+            android:layout_height="@dimen/pad_height"
+            android:layout_marginTop="@dimen/pad_margin_top"
+            android:layout_marginBottom="@dimen/pad_margin_bottom"
+            android:background="@drawable/icon_reserve_en"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton_inverter"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageButton_tv"
+            app:layout_constraintTop_toTopOf="parent" />
+-->
+
+    <!--
+        <Button
+            android:id="@+id/imageButton_inverter"
+            android:layout_width="@dimen/pad_width"
+            android:layout_height="@dimen/pad_height"
+            android:layout_marginTop="@dimen/pad_margin_top"
+            android:layout_marginBottom="@dimen/pad_margin_bottom"
+            android:background="@drawable/activity_inverter_en"
+
+            android:onClick="inverterMessage"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageButton_window"
+            app:layout_constraintTop_toTopOf="parent" />
+    -->
+
+        <Button
+            android:id="@+id/imageButton_inverter"
+            android:layout_width="@dimen/pad_width"
+            android:layout_height="@dimen/pad_height"
+            android:layout_marginTop="@dimen/pad_margin_top"
+            android:layout_marginBottom="@dimen/pad_margin_bottom"
+            android:background="@drawable/icon_reserve_en"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageButton_window"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anwensoft.cardvr">
+    <!-- USB -->
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_start"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".activity.MyDataActivity">
+
+        <activity
+            android:exported="true"
+            android:name=".activity.Activity_Splash"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityNotTitleByTranslucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.Service_usb" />
+
+        <activity
+            android:name=".activity.Activity_Car_home"
+            android:theme="@style/ActivityStyle" />
+        <activity
+            android:name=".activity.Activity_Led_Control"
+            android:parentActivityName=".activity.Activity_Car_home" />
+        <activity
+            android:name=".activity.Activity_TV_Control"
+            android:parentActivityName=".activity.Activity_Car_home" />
+        <activity
+            android:name=".activity.Activity_High_pitch"
+            android:parentActivityName=".activity.Activity_Car_home" />
+        <activity
+            android:name=".activity.Activity_Window_Control"
+            android:parentActivityName=".activity.Activity_Car_home"></activity>
+    </application>
+
+</manifest>

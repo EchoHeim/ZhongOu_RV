@@ -1,0 +1,23 @@
+<resources>
+
+    <dimen name="action_bar_size">45.0dip</dimen>
+
+    <dimen name="s1">18.0sp</dimen>
+    <dimen name="s2">20.0sp</dimen>
+    <dimen name="s4">18.0sp</dimen>
+    <dimen name="s8">14.0sp</dimen>
+
+    <dimen name="padding_d1">5dp</dimen>
+    <dimen name="padding_d2">10dp</dimen><!--控件距离边距pad-->
+
+    <dimen name="padding_d3">150dp</dimen>
+
+    <dimen name="pad_width">256dp</dimen>
+    <dimen name="pad_height">278dp</dimen>
+    <dimen name="pad_margin_top">231dp</dimen>
+    <dimen name="pad_margin_bottom">201dp</dimen>
+
+
+    <dimen name="text_s1">18sp</dimen><!--控件文字大小-->
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_led_control"
+    tools:context=".activity.Activity_Led_Control">
+
+<!--
+        <Button
+            android:id="@+id/imageButton_led_dynamic"
+            android:layout_width="@dimen/pad_width"
+            android:layout_height="@dimen/pad_height"
+            android:layout_marginTop="@dimen/pad_margin_top"
+            android:layout_marginBottom="@dimen/pad_margin_bottom"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="128dp"
+            android:background="@drawable/activity_led_dynamic"
+
+            android:onClick="led_dynamicMessage"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton_led_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+-->
+    <Button
+        android:id="@+id/imageButton_led_dynamic"
+        android:layout_width="@dimen/pad_width"
+        android:layout_height="@dimen/pad_height"
+        android:layout_marginTop="@dimen/pad_margin_top"
+        android:layout_marginBottom="@dimen/pad_margin_bottom"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="128dp"
+        android:background="@drawable/icon_reserve"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_led_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/imageButton_led_light"
+        android:layout_width="@dimen/pad_width"
+        android:layout_height="@dimen/pad_height"
+        android:layout_marginTop="@dimen/pad_margin_top"
+        android:layout_marginBottom="@dimen/pad_margin_bottom"
+
+        android:background="@drawable/activity_led_light"
+        android:onClick="led_lightMessage"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_led_env1"
+        app:layout_constraintStart_toEndOf="@id/imageButton_led_dynamic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/imageButton_led_env1"
+        android:layout_width="@dimen/pad_width"
+        android:layout_height="@dimen/pad_height"
+        android:layout_marginTop="@dimen/pad_margin_top"
+        android:layout_marginBottom="@dimen/pad_margin_bottom"
+
+        android:background="@drawable/activity_led_env1"
+        android:onClick="led_env1Message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_led_env2"
+        app:layout_constraintStart_toEndOf="@id/imageButton_led_light"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/imageButton_led_env2"
+        android:layout_width="@dimen/pad_width"
+        android:layout_height="@dimen/pad_height"
+        android:layout_marginTop="@dimen/pad_margin_top"
+        android:layout_marginBottom="@dimen/pad_margin_bottom"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="128dp"
+        android:background="@drawable/activity_led_env2"
+        android:onClick="led_env2Message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageButton_led_env1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
